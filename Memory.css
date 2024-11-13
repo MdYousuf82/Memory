@@ -108,3 +108,17 @@ img{
 	margin-top: 2vh;
 	color: white;
 }
+@media (max-width:576px){
+	.Memory{
+		height: 50vh;
+		width: auto;
+	}
+	
+
+}
+@media (max-width:768px){
+	.Memory{
+		height: 60vh;
+		width: auto;
+	}
+}
