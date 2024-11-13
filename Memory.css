@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100vh;
+	background-color: #FFB6C1;
+}
+img{
+	height: 65%;
+}
+.Memory{
+	position: relative;
+	top: 2.5vh;
+	height: 75vh;
+	width: 50vw;
+	
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	background-color: white;
+	border-radius: 10px;
+	
+}
+.pycls{
+	width: 23.5%;
+	height: 30%;
+	position: relative;
+	left: 0.5vw;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0 0 10px;
+	transform-style: preserve-3d;
+	transition: transform 0.5s;
+	margin: 3px;
+
+
+}
+.front,.back{
+	top: 1vh;
+	left: 1vw;
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	backface-visibility: hidden;
+	
+}
+.front{
+	transform: rotateY(180deg);
+}
+
+.flip{
+	transform: rotateY(180deg);
+}
+.hd{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@keyframes bounce{
+	0% {transform: translateY(0);}
+	50% {transform: translateY(-10px);}
+	100% {transform: translateY(0);}
+}
+.win-msg{
+	
+	animation: bounce 1s ease infinite;
+}
+.drk{
+	position: relative;
+	margin-top: 2vh;
+	height: 5vh;
+	width: 9vw;
+	border-radius: 20px;
+	background-color: black;
+	box-shadow: 0 0 10px;
+}
+.drk .mode{
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0 0 10px;
+	transition: transform 0.2s ease;
+}
+.active .mode{
+	left: 7vw;
+
+}
+.drk-thm{
+	background-color: #333333;
+	color: white;
+}
+.hd1{
+	display: flex;
+	justify-content: space-between;
+	width: 45%;
+}
+#reset{
+	border-radius: 5px;
+	background-color: #232f3e;
+	box-shadow: 0 0 10px;
+	width: 7vw;
+	height: 5vh;
+	margin-top: 2vh;
+	color: white;
+}
