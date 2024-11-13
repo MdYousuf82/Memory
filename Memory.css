@@ -108,17 +108,26 @@ img{
 	margin-top: 2vh;
 	color: white;
 }
-@media (max-width:576px){
-	.Memory{
-		height: 50vh;
-		width: auto;
-	}
-	
-
+@media (max-width: 768px) {
+    .Memory {
+        height: 80vh; 
+        width: 90vw;
+    }
+    .pycls {
+        width: 45%;
+        height: 40%;
+    }
+    
 }
-@media (max-width:768px){
-	.Memory{
-		height: 60vh;
-		width: auto;
-	}
+
+@media (max-width: 576px) {
+    .Memory {
+        height: 90vh; 
+        width: 95vw;
+    }
+    .pycls {
+        width: 45%;
+        height: 40%;
+    }
+    
 }
